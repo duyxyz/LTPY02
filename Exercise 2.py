@@ -3,7 +3,8 @@
 #Write a Python program to compute the minimum and the maximum values from a sequence of integers. 
 #The user should enter a string made of integer values separated by exactly one space. 
 #This is a sample log of the execution of the program  (user input is in bold and underlined):
-
+#Nguyễn Minh Duy
+#29/01/2026
 
 numbers = input("your numbers: ")
 

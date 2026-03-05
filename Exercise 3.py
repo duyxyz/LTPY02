@@ -2,7 +2,8 @@
 #Write a Python program to convert a temperature in degree Celsius into the same temperature in Fahrenheit and vice-versa.
 #The initial scale used is given by the user when she/he inputs the temperature to convert. 
 #These are sample logs of the execution of the program  (user input is in bold and underlined):
-
+#Nguyễn Minh Duy
+#29/01/2026
 
 
 

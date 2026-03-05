@@ -1,6 +1,8 @@
 #Exercise 4
 #Write a Python program to compute the yearly score and the rating of a student. 
 #The user inputs the score of each quarters (three float numbers on the same line spearated by exactly one space) then the program computes and displays the average and the corresponding rating. The following table defines how to compute the rating
+#Nguyễn Minh Duy
+#29/01/2026
 
 score = input("enter your quarter scores: ")
 

@@ -4,7 +4,8 @@
 #C:\Program\Python\lab2\test.py
 #the filename is test.py and the folder information is C:\Program\Python\lab2. 
 #This is a sample log of the execution of the program (user input is in bold and underlined)
-
+#Nguyễn Minh Duy
+#29/01/2026
 
 path = input("file path: ")
 parts = path.split("\\")
