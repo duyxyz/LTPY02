@@ -4,15 +4,15 @@
 #The user should enter a string made of integer values separated by exactly one space. 
 #This is a sample log of the execution of the program  (user input is in bold and underlined):
 #Nguyễn Minh Duy
-#29/01/2026
+#05/03/2026
 
-numbers = input("your numbers: ")
+cac_so=input("nhap cac so:")
+danh_sach_so=cac_so.split(" ")
+danh_sach_so=[int(x) for x in danh_sach_so]
+so_nho_nhat=min(danh_sach_so)
+so_lon_nhat=max(danh_sach_so)
+print("min =",so_nho_nhat,", max =",so_lon_nhat)
 
-num_list = numbers.split(" ")
 
-num_list = [int(x) for x in num_list]
 
-minimum = min(num_list)
-maximum = max(num_list)
 
-print("min =", minimum, ", max =", maximum)

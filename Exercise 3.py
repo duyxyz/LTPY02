@@ -3,27 +3,44 @@
 #The initial scale used is given by the user when she/he inputs the temperature to convert. 
 #These are sample logs of the execution of the program  (user input is in bold and underlined):
 #Nguyễn Minh Duy
-#29/01/2026
+#05/03/2026
 
+nhiet_do = input("nhap nhiet do: ")
 
+phan = nhiet_do.split("°")
 
-temp = input("enter your temperature: ")
-parts = temp.split("°")
-if len(parts) != 2:
-    print("unknown scale")
+if len(phan) != 2:
+    print("khong biet don vi")
 else:
-    number = parts[0]
-    scale = parts[1]
+    so = phan[0]
+    don_vi = phan[1]
 
-    if scale == "C":
-        c = float(number)
+    if don_vi == "C":
+        c = float(so)
         f = c * 9/5 + 32
-        print(number + "°C = {:.2f}°F".format(f))
+        print(so + "°C = {:.2f}°F".format(f))
 
-    elif scale == "F":
-        f = float(number)
+    elif don_vi == "F":
+        f = float(so)
         c = (f - 32) * 5/9
-        print(number + "°F = {:.2f}°C".format(c))
+        print(so + "°F = {:.2f}°C".format(c))
 
     else:
-        print("unknown scale")
+        print("khong biet don vi")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

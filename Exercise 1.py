@@ -5,12 +5,11 @@
 #the filename is test.py and the folder information is C:\Program\Python\lab2. 
 #This is a sample log of the execution of the program (user input is in bold and underlined)
 #Nguyễn Minh Duy
-#29/01/2026
+#05/03/2026
 
-path = input("file path: ")
-parts = path.split("\\")
-filename = parts[-1]
-folder = "\\".join(parts[:-1])
-print(filename)
-print(folder)
-
+duongdan = input("duong dan file: ")
+phan = duongdan.split("\\")
+ten_file = phan[-1]
+thu_muc = "\\".join(phan[:-1])
+print(ten_file)
+print(thu_muc)

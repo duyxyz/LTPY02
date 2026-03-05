@@ -2,16 +2,16 @@
 #Write a script which reads 5 distinct integers step by step from the user and print them out in a list. 
 #If the user input a number previously selected, the new integer is not added in the list and the script print a message to notify the user that the number was already selected.
 #Nguyễn Minh Duy
-#29/01/2026
+#05/03/2026
 
-bag = []
+tui = []
 
-while len(bag) < 5:
-    number = int(input("Enter a number: "))
+while len(tui) < 5:
+    so = int(input("nhap mot so: "))
 
-    if number in bag:
-        print(number, "is already in the bag")
+    if so in tui:
+        print(so, "da co trong tui")
     else:
-        bag.append(number)
+        tui.append(so)
 
-print("Your bag:", bag)
+print("tui cua ban:", tui)

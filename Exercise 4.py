@@ -2,32 +2,52 @@
 #Write a Python program to compute the yearly score and the rating of a student. 
 #The user inputs the score of each quarters (three float numbers on the same line spearated by exactly one space) then the program computes and displays the average and the corresponding rating. The following table defines how to compute the rating
 #Nguyễn Minh Duy
-#29/01/2026
+#05/03/2026
 
-score = input("enter your quarter scores: ")
+diem = input("nhap diem 3 hoc ky: ")
 
-parts = score.split(" ")
+phan = diem.split(" ")
 
-if len(parts) != 3:
+if len(phan) != 3:
     print("vui long nhap lai")
 else:
-    s1 = float(parts[0])
-    s2 = float(parts[1])
-    s3 = float(parts[2])
+    d1 = float(phan[0])
+    d2 = float(phan[1])
+    d3 = float(phan[2])
 
-    average = (s1 + s2 + s3) / 3
+    trung_binh = (d1 + d2 + d3) / 3
 
-    print("your final score is {:.2f}".format(average))
+    print("diem trung binh la {:.2f}".format(trung_binh))
 
-    if average < 4:
-        print("rating: very poor")
-    elif average < 5.5:
-        print("rating: poor")
-    elif average < 7:
-        print("rating: fair")
-    elif average < 8.5:
-        print("rating: good")
-    elif average < 9.5:
-        print("rating: very good")
+    if trung_binh < 4:
+        print("xep loai: rat kem")
+    elif trung_binh < 5.5:
+        print("xep loai: kem")
+    elif trung_binh < 7:
+        print("xep loai: trung binh")
+    elif trung_binh < 8.5:
+        print("xep loai: kha")
+    elif trung_binh < 9.5:
+        print("xep loai: gioi")
     else:
-        print("rating: outstanding")
+        print("xep loai: xuat sac")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
