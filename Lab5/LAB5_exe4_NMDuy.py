@@ -1,17 +1,34 @@
-#Exercise 5
-#Write a script which reads 5 distinct integers step by step from the user and print them out in a list. 
-#If the user input a number previously selected, the new integer is not added in the list and the script print a message to notify the user that the number was already selected.
+#Lab5
+#Exercise 4
+#Redo exercise 3, now using only the for loop and the string method readline at the same time (why do we need that?)
 #Nguyễn Minh Duy
-#05/03/2026
+#12/03/2026
 
-tui = []
 
-while len(tui) < 5:
-    so = int(input("nhap mot so: "))
 
-    if so in tui:
-        print(so, "da co trong tui")
-    else:
-        tui.append(so)
 
-print("tui cua ban:", tui)
+filepath = input("nhap duong dan tep: ")
+
+with open(filepath) as f:
+    tong = 0
+    dem = 0
+    nho_nhat = None
+    lon_nhat = None
+
+    for dong in f:
+        so = int(dong)
+        tong += so
+        dem += 1
+
+        # cap nhat gia tri nho nhat
+        if nho_nhat is None or so < nho_nhat:
+            nho_nhat = so
+
+        # cap nhat gia tri lon nhat
+        if lon_nhat is None or so > lon_nhat:
+            lon_nhat = so
+
+trung_binh = round(tong / dem, 2)
+print(f"gia tri nho nhat la {nho_nhat}")
+print(f"gia tri lon nhat la {lon_nhat}")
+print(f"gia tri trung binh la {trung_binh}")
