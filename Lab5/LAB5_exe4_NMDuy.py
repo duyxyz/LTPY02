@@ -3,10 +3,6 @@
 #Redo exercise 3, now using only the for loop and the string method readline at the same time (why do we need that?)
 #Nguyễn Minh Duy
 #12/03/2026
-
-
-
-
 filepath = input("nhap duong dan tep: ")
 
 with open(filepath) as f:
